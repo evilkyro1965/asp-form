@@ -18,13 +18,13 @@
         <hr />
         @Html.ValidationSummary(true)
 
-        <div class="form-group">
+        <div class="form-group @if(@Html.ValidationStatus(Model => Model.GenreId)==false){<text>has-error</text>}">
             @Html.LabelFor(model => model.GenreId, "GenreId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("GenreId", arrGenres, "- Select Genre -", new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.GenreId)
+                @Html.KValidationMessageFor(model => model.GenreId)
             </div>
-            
+
         </div>
 
         <div class="form-group">

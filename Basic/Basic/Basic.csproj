@@ -121,6 +121,7 @@
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Controllers\MusicStoreController.cs" />
     <Compile Include="Controllers\StoreManagerController.cs" />
+    <Compile Include="formlibrary\KValidationExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
